@@ -1,62 +1,45 @@
-// 1.
-
-let admin, name;
-
-name = "Джон";
-
-admin = name;
-
-alert(admin);
-
-// 2.
-
-const planetName = "Ерта";
-
-console.info("Название планеты:", planetName);
-
-// 3.
-let variable1 = prompt("Введите значения 1:");
-let variable2 = prompt("Введите значения 2:");
-let variable3 = prompt("Введите значения 3:");
-
-console.warn(variable1);
-console.warn(variable2);
-console.warn(variable3);
-
-// 4.
-
-const Name = prompt("Как вас зовут?");
-const yearOfBirth = prompt("Сколько вам лет?");
-
-
-const yearOfBirthNumber = parseInt(yearOfBirth);
-if (isNaN(yearOfBirthNumber)) {
-  console.log("Вы ввели неправильную дату рождения.");
- 
-  throw new Error("Ошибка: неправильный год рождения.");
-}
-
-
-const currentYear = new Date().getFullYear();
-const age = currentYear - yearOfBirthNumber;
-
-
-if (age >= 18) {
-  console.log(`${Name}, вам ${age} лет. Ви можете гулять!`);
+// 1
+let num = prompt("Введіть число: ");
+if (num % 2 === 0) {
+  console.log(num + " є парним числом");
 } else {
-  console.log(`${Name}, к сожелению, ви еще не достигли совершенолетия. Гулять запрещено!`);
+  console.log(num + " є непарним числом");
 }
+// 2
+const numb = prompt("Введіть число: ");
 
-
-// .5
-
-const input = prompt("Введите число:");
-const number = Number(input);
-
-if (number >= 10 && number <= 1100) {
-  console.log(`${number} входит в диапазон от 10 до 1100.`);
+if (num < 10 && num > 5) {
+  console.log(num + " є числом, що менше за 10 і більше за 5");
+} else if (num === "7") {
+  console.log(num + " дорівнює 7");
 } else {
-  console.log(`${number} не входит в диапазон от 10 до 1100.`);
+  console.log(num + " не задовольняє умови");
 }
+// 3
+const month = Number(prompt("Введіть номер місяця:"));
 
-
+switch (month) {
+  case 1:
+  case 2:
+  case 12:
+    console.log("Зима");
+    break;
+  case 3:
+  case 4:
+  case 5:
+    console.log("Весна");
+    break;
+  case 6:
+  case 7:
+  case 8:
+    console.log("Літо");
+    break;
+  case 9:
+  case 10:
+  case 11:
+    console.log("Осінь");
+    break;
+  default:
+    console.log("Введений неправильний номер місяця.");
+    break;
+}
