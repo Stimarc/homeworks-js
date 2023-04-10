@@ -43,3 +43,55 @@ switch (month) {
     console.log("Введений неправильний номер місяця.");
     break;
 }
+// 4
+function power(number, exponent) {
+  let result = Math.pow(number, exponent);
+  return result;
+}
+// 5
+function repeatString(string, times) {
+  let repeatedString = string.repeat(times);
+  console.log(`Рядок ${string} повторений ${times} разів: ${repeatedString}`);
+  return repeatedString;
+}
+// 6
+for (let i = 0; i < 5; i++) {
+  let randomNum = Math.random();
+  console.log(randomNum);
+}
+// 7
+function знайтиНайбільше(масив) {
+  let найбільше = масив[0];
+  for (let i = 1; i < масив.length; i++) {
+    if (масив[i] > найбільше) {
+      найбільше = масив[i];
+    }
+  }
+  return найбільше;
+}
+
+let числа = [50, 15, 60, 35, 75, 20, 95];
+let найбільше_число = знайтиНайбільше(числа);
+
+console.log("Найбільше число: " + найбільше_число);
+// 8
+function validatePassword(password, confirmPassword) {
+  if (password.length < 8) {
+    return false;
+  }
+
+  if (password !== confirmPassword) {
+    return false;
+  }
+
+  return true;
+}
+const password = "myPass145624";
+const confirmPassword = "myPass145624";
+
+if (validatePassword(password, confirmPassword)) {
+  console.log("Пароль валідний");
+} else {
+  console.log("Пароль не валідний");
+}
+
