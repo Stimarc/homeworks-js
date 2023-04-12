@@ -1,62 +1,106 @@
-// 1.
+//Об'єкт Math:
 
-let admin, name;
-
-name = "Джон";
-
-admin = name;
-
-alert(admin);
-
-// 2.
-
-const planetName = "Ерта";
-
-console.info("Название планеты:", planetName);
-
-// 3.
-let variable1 = prompt("Введите значения 1:");
-let variable2 = prompt("Введите значения 2:");
-let variable3 = prompt("Введите значения 3:");
-
-console.warn(variable1);
-console.warn(variable2);
-console.warn(variable3);
-
-// 4.
-
-const Name = prompt("Как вас зовут?");
-const yearOfBirth = prompt("Сколько вам лет?");
-
-
-const yearOfBirthNumber = parseInt(yearOfBirth);
-if (isNaN(yearOfBirthNumber)) {
-  console.log("Вы ввели неправильную дату рождения.");
- 
-  throw new Error("Ошибка: неправильный год рождения.");
+//1
+function findHypotenuse(a, b) {
+  const cSquared = Math.pow(a, 2) + Math.pow(b, 2);
+  const c = Math.sqrt(cSquared);
+  return c;
+}
+const a = 3;
+const b = 4;
+const c = findHypotenuse(a, b);
+console.log(c);
+//2
+function getRandomNumber(precision) {
+  const randomNumber = Math.random();
+  const roundedNumber = randomNumber.toFixed(precision);
+  return parseFloat(roundedNumber);
 }
 
+const randomNum = getRandomNumber(2);
+console.log(randomNum); 
 
-const currentYear = new Date().getFullYear();
-const age = currentYear - yearOfBirthNumber;
+// Методи роботи з масивами:
 
+//1
+function reverseArray(arr) {
+  const len = arr.length;
+  for (let i = 0; i < len / 2; i++) {
+    const temp = arr[i];
+    arr[i] = arr[len - 1 - i];
+    arr[len - 1 - i] = temp;
+  }
+  return arr;
+}
+//2
+function sumOfEvenNumbers(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      sum += arr[i];
+    }
+  }
+  return sum;
+}
+//3
+function removeWhitespace(arr) {
+  return arr.map(str => str.trim());
+}
+//Цикли:
 
-if (age >= 18) {
-  console.log(`${Name}, вам ${age} лет. Ви можете гулять!`);
-} else {
-  console.log(`${Name}, к сожелению, ви еще не достигли совершенолетия. Гулять запрещено!`);
+//1
+function multiplicationTable(num) {
+  for (let i = 1; i <= 10; i++) {
+    console.log(`${num} * ${i} = ${num * i}`);
+  }
+}
+//2
+function uniqueArray(arr) {
+  const uniqueArr = []; 
+  for (let i = 0; i < arr.length; i++) {
+    if (!uniqueArr.includes(arr[i])) {
+      uniqueArr.push(arr[i]); 
+    }
+  }
+  return uniqueArr; 
+}
+const arr = [1, 2, 2, 3, 3, 3, 4, 5, 5];
+const uniqueArr = uniqueArray(arr);
+console.log(uniqueArr); 
+//3
+function longestString(arr) {
+  let longest = ""; 
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > longest.length) {
+      longest = arr[i]; 
+    }
+  }
+  return longest;
+}
+//4
+function squareArray(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(arr[i] ** 2);
+  }
+  return result;
+}
+//5
+function toLowerCaseArray(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(arr[i].toLowerCase());
+  }
+  return result;
+}
+//6
+function averageArray(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
 }
 
-
-// .5
-
-const input = prompt("Введите число:");
-const number = Number(input);
-
-if (number >= 10 && number <= 1100) {
-  console.log(`${number} входит в диапазон от 10 до 1100.`);
-} else {
-  console.log(`${number} не входит в диапазон от 10 до 1100.`);
-}
 
 
