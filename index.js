@@ -23,25 +23,12 @@ console.log(randomNum);
 // Методи роботи з масивами:
 
 //1
-function reverseArray(arr) {
-  const len = arr.length;
-  for (let i = 0; i < len / 2; i++) {
-    const temp = arr[i];
-    arr[i] = arr[len - 1 - i];
-    arr[len - 1 - i] = temp;
-  }
-  return arr;
-}
+const reverseArray = arr => arr.map((_, i, a) => a[a.length - 1 - i], arr.reverse());
+
 //2
-function sumOfEvenNumbers(arr) {
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0) {
-      sum += arr[i];
-    }
-  }
-  return sum;
-}
+const sumOfEvenNumbers = arr => arr.filter(num => num % 2 === 0).reduce((acc, num) => acc + num, 0);
+
+
 //3
 function removeWhitespace(arr) {
   return arr.map(str => str.trim());
