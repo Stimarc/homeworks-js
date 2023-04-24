@@ -88,18 +88,21 @@ function createArray(n, first = 0, second = 1) {
 }
 //6
 function ChessBoard(size) {
-  const board = [];
+  let board = '';
 
-  for (let i = 0; i < size; i++) {
-    const row = [];
-
-    for (let j = 0; j < size; j++) {
-      const cell = (i + j) % 2 === 0 ? '  ' : '  ';
-      row.push(cell);
+  for (let row = 0; row < size; row++) {
+    for (let col = 0; col < size; col++) {
+      if ((row + col) % 2 === 0) {
+        board += ' ';
+      } else {
+        board += '#';
+      }
     }
-
-    board.push(row.join(''));
+    board += '\n';
   }
 
-  console.log(board.join('\n'));
+  console.log(board);
 }
+
+ChessBoard(8);
+
