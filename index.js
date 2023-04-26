@@ -1,62 +1,54 @@
-// 1.
+//1
+const favoriteAnimal = [
+  { name: "Caramel", kind: "Cat", age: "1,5", characteristics: "playful" },
+];
 
-let admin, name;
-
-name = "Джон";
-
-admin = name;
-
-alert(admin);
-
-// 2.
-
-const planetName = "Ерта";
-
-console.info("Название планеты:", planetName);
-
-// 3.
-let variable1 = prompt("Введите значения 1:");
-let variable2 = prompt("Введите значения 2:");
-let variable3 = prompt("Введите значения 3:");
-
-console.warn(variable1);
-console.warn(variable2);
-console.warn(variable3);
-
-// 4.
-
-const Name = prompt("Как вас зовут?");
-const yearOfBirth = prompt("Сколько вам лет?");
-
-
-const yearOfBirthNumber = parseInt(yearOfBirth);
-if (isNaN(yearOfBirthNumber)) {
-  console.log("Вы ввели неправильную дату рождения.");
- 
-  throw new Error("Ошибка: неправильный год рождения.");
+function changePropertyValue(objIndex, propertyName, newValue) {
+  favoriteAnimal[objIndex][propertyName] = newValue;
 }
 
+console.log(favoriteAnimal);
 
-const currentYear = new Date().getFullYear();
-const age = currentYear - yearOfBirthNumber;
+changePropertyValue(0, "age", "2");
+//2
+const twoCars = [
+  {brand:"Audi",model:"a7",year:2021,maximumSpeed:"250"},
+  {brand:"Lamborghini",model:"Veneno",year:2015,maximumSpeed:"350"}
+];
 
+let car1 = JSON.parse(JSON.stringify(twoCars[0]));
+let car2 = JSON.parse(JSON.stringify(twoCars[1]));
 
-if (age >= 18) {
-  console.log(`${Name}, вам ${age} лет. Ви можете гулять!`);
+if (JSON.stringify(car1) === JSON.stringify(car2)) {
+  console.log("Об'єкти ідентичні");
 } else {
-  console.log(`${Name}, к сожелению, ви еще не достигли совершенолетия. Гулять запрещено!`);
+  console.log("Об'єкти різні");
 }
 
-
-// .5
-
-const input = prompt("Введите число:");
-const number = Number(input);
-
-if (number >= 10 && number <= 1100) {
-  console.log(`${number} входит в диапазон от 10 до 1100.`);
-} else {
-  console.log(`${number} не входит в диапазон от 10 до 1100.`);
+for(let i = 0; i < twoCars.length; i++){
+  delete twoCars[i].maximumSpeed;
 }
 
+console.log(twoCars);
+//3
+const userWebsite = [
+  { name: "Alex", email: "alex@gmail.com", password: "Alex1993", job: "frontEndDeveloper", phone: 3874059425 }
+];
+
+function checkPassword(password, object) {
+  return password === object.password;
+}
+
+function printObjectProperties(object) {
+  for (let property in object) {
+    console.log(`${property}: ${object[property]}`);
+  }
+}
+
+const password = "Alex1993";
+const result = checkPassword(password, userWebsite[0]);
+console.log(result);
+
+printObjectProperties(userWebsite[0]);
+//4
 
