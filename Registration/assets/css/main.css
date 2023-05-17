@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+    padding: 30px 10%;
+}
+
+header > h1{
+    color: purple;
+}
+
+footer > h6{
+    color: cyan;
+}
+#feedbackForm {
+    border: 1px solid silver;
+    border-radius: 15px;
+    padding: 30px;
+    width: 450px;
+    margin: 30px auto;
+    box-shadow: 10px 10px 30px silver;
+  }
+  
+  #feedbackForm label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #feedbackForm input,
+  #feedbackForm textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 15px;
+  }
+  
+  #feedbackForm input[type="submit"] {
+    margin-top: 10px;
+    background-color: #06a120;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+
+  #validationMessage {
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
+  }
+  
