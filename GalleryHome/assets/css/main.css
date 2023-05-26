@@ -1,0 +1,70 @@
+body {
+    text-align: center;
+    padding: 20px 5%;
+}
+
+header>h2 {
+    color: rgb(222, 86, 1);
+}
+
+footer>h6 {
+    color: rgb(8, 73, 73);
+}
+
+.nav-img {
+    width: 75%;
+    margin: 3px;
+    padding: 3px;
+    border: 1px solid silver;
+    transition: transform 0.5s;
+}
+
+.nav-img:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px silver;
+}
+
+.row div {
+    padding: 5px;
+}
+
+section {
+    border: 1px solid silver;
+    border-radius: 55px;
+    padding: 15px;
+    height: 100%;
+    box-shadow: 0px 0px 50px silver;
+}
+
+#logo-img {
+    width: 700px;
+
+    
+}
+.rotate-img{
+    width: 25px;
+    margin: 15px;
+}
+
+.rotate-img {
+    width: 25px;
+    margin: 15px;
+    transition: transform 0.5s ease;
+    transform-origin: center;
+  }
+  
+  .rotate-img:hover {
+    transform: rotate(360deg);
+  }
+  
+
+.mini {
+    width: 100%;
+    margin: 2px;
+    border: 1px solid silver;
+}
+
+.mini:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px gray;
+}
