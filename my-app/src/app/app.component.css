@@ -1,0 +1,20 @@
+.title {
+    padding: 10px;
+    border: 2px solid silver;
+    background: silver;
+  }
+  
+  .roleUser {
+    background: #006680;
+    color: white;
+  }
+  
+  .roleAdmin {
+    background: #048000;
+    color: white;
+  }
+  
+  .roleGuest {
+    background: #f6ff75;
+    color: #000c42;
+  }

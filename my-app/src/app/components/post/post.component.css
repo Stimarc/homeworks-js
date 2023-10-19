@@ -1,0 +1,15 @@
+.post {
+  padding: 20px;
+  border: 2px solid silver;
+  margin: 10px;
+}
+
+.title {
+  background: green;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.content {
+  font-weight: bold;
+}

@@ -1,0 +1,23 @@
+<!-- <h1 
+class="title"
+[class.isLogin]="isLogin"
+>
+ {{ title }}
+</h1> -->
+<h1 
+  class="title"
+  [ngClass]="{
+  roleUser: role === 'user',
+  roleAdmin: role === 'admin',
+  roleGuest: role === 'guest',
+  }" 
+>
+
+ {{ title }}
+</h1>
+
+<main class="main">
+
+ <app-posts/>
+
+</main>
