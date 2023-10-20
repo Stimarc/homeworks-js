@@ -1,4 +1,4 @@
-export const cards = () => {
+export  const cards = () => {
   const createCard = (title, description) => {
     const card = document.createElement('div');
     card.classList.add('card');
