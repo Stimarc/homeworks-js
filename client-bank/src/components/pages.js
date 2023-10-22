@@ -3,7 +3,7 @@ import { cards } from "./cards.js"
 import { contacts } from "./contacts.js"
 import { page404 } from "./page404.js"
 
-export {
+export{
     home,
     cards,
     contacts,
