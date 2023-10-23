@@ -1,163 +1,185 @@
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
-  }
-  
-  li{
-      list-style: none;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Style from header */
-  header {
-    background-color: #0056b3;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  header ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  header li {
-    margin-right: 20px;
-  }
-  
-  header a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  header a:hover {
-    color: #ff0000;
-  }
-    
-    
-  /* cards */
-  
-  /* Стили для карточек */
-  .homepage h2{
-    text-align: center;
-  }
-  .card {
-    background: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card h2 {
-    font-size: 24px;
-    margin: 0;
-    color: #333;
-  }
-  
-  .card p {
-    font-size: 16px;
-    color: #666;
-  }
-  
-  /* style form */
-  form {
-    margin-top: 20px;
-  }
-  
-  label {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  
-  input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    background: #0077FF;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: #0055CC;
-  }
-  
-  /* style form contacts */
-  .contact-page {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .contact-page h1 {
-    font-size: 30px;
-    color: #0056b3;
-    margin: 10px 0;
-  }
-  
-  .contact-page form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-page label {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #0056b3;
-  }
-  
-  .contact-page input[type="text"],
-  .contact-page input[type="email"],
-  .contact-page select,
-  .contact-page textarea {
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 5px 0;
-  }
-  
-  .contact-page button {
-    background-color: #0056b3;
-    color: #fff;
-    font-size: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px 0;
-  }
-  
-  .contact-page button:hover {
-    background-color: #00b418;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style from header */
+header {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header li {
+  margin-right: 20px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header a:hover {
+  color: #ff0000;
+}
+
+.home {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+
+.main {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* cards */
+
+/* Стили для карточек */
+.homepage h2 {
+  text-align: center;
+}
+
+.card {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* style form */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #0077FF;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0055CC;
+}
+
+/* style form contacts */
+.contact-page {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-page h1 {
+  font-size: 30px;
+  color: #0056b3;
+  margin: 10px 0;
+}
+
+.contact-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-page label {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #0056b3;
+}
+
+.contact-page input[type="text"],
+.contact-page input[type="email"],
+.contact-page select,
+.contact-page textarea {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.contact-page button {
+  background-color: #0056b3;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.contact-page button:hover {
+  background-color: #00b418;
+}

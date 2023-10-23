@@ -1,15 +1,22 @@
 export const home = () => {
-    return `
-      <div class="home">
-        <h1 class="homepage">Home page</h1>
-        <p class="hometext">This is the main page of Client-Bank. 
-        Here you can learn about our services and products.</p>
+  return `
+    <div class="home">
+      
+        <h1>Home page</h1>
+   
+      <div class="main">
+        <container>
+        <div class="main-content">
+
+        </div>
+        </container>
       </div>
-     `;
-  };
+      <footer class="footer">
+      Copyright: &copy; Stim-Product &trade; Kyiv, 2023
+      
+      </footer>
+    </div>
+
   
-  
-     
-    
-  
-  
+  `;
+};
