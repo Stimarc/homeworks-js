@@ -12,7 +12,7 @@ export const home = () => {
         </container>
       </div>
       <footer class="footer">
-      Copyright: &copy; Stim-Product &trade; Kyiv, 2023
+      Copyright: &copy; Client-Bank &trade; Kyiv, 2023
       
       </footer>
     </div>
