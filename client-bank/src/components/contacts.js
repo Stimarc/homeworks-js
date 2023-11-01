@@ -9,6 +9,9 @@ export const contacts = () => {
   
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+          <label for="phone">Number Phone:</label>
+          <input type="number"  name="number" placeholder="Your Number" required>
   
           <label for="subject">Subject:</label>
           <select id="subject" name="subject">
