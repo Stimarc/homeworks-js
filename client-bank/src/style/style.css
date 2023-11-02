@@ -35,13 +35,11 @@ li {
 }
 
 
-.main {
+.main-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  align-items: center;
 }
-
 
 .service-card {
   text-align: center;
@@ -50,10 +48,11 @@ li {
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #f5f5f5;
-  width: calc(33.33% - 20px);
+  width: calc(50% - 20px);
   min-width: 300px;
+  margin: 0 auto; 
+  margin-bottom: 20px;
 }
-
 
 .service-card img {
   max-width: 100%;
@@ -61,17 +60,16 @@ li {
   margin: 20px 0;
 }
 
-
 .service-card h3 {
   font-size: 24px;
   color: #333;
 }
 
-
 .service-card p {
   font-size: 16px;
   color: #666;
 }
+
 
 
 .footer {
@@ -196,28 +194,24 @@ button:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.contact-page h1 {
+.contact-heading {
   font-size: 30px;
   color: #0056b3;
   margin: 10px 0;
 }
 
-.contact-page form {
+.contact-form {
   display: flex;
   flex-direction: column;
 }
 
-.contact-page label {
+.contact-label {
   font-size: 18px;
   margin: 10px 0;
   color: #0056b3;
 }
 
-.contact-page input[type="text"],
-.contact-page input[type="email"],
-.contact-page input[type="number"],
-.contact-page select,
-.contact-page textarea {
+.contact-input {
   font-size: 16px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -225,7 +219,7 @@ button:hover {
   margin: 5px 0;
 }
 
-.contact-page button {
+.contact-button {
   background-color: #0056b3;
   color: #fff;
   font-size: 20px;
@@ -236,9 +230,10 @@ button:hover {
   margin: 10px 0;
 }
 
-.contact-page button:hover {
+.contact-button:hover {
   background-color: #0b4103;
 }
+
 /*  (smartphones) */
 @media screen and (max-width: 768px) {
   .header ul {
